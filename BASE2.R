@@ -35,8 +35,8 @@ if(MODEL==2){
   rm(object1, object2,..)
   
   #Notes:
-  #1. .name starting with a period are accessible but invisible, so they will not be found by ‘ls’
-  #2. To guarantee memory removal, use ‘gc’, releasing unused memory to the OS. R performs automatic ‘gc’ periodically
+  #1. .name starting with a period are accessible but invisible, so they will not be found by ‘ls�?
+  #2. To guarantee memory removal, use ‘gc�?, releasing unused memory to the OS. R performs automatic ‘gc�? periodically
 }
 
 # Library
@@ -89,15 +89,15 @@ if(MODEL==5){
   nchar(variable) # length of a character or numeric
   
   #3. Date/POSIXct
-  #• Date: stores just a date. In numeric form, number of days since 1/1/1970 (see below).
+  #�? Date: stores just a date. In numeric form, number of days since 1/1/1970 (see below).
   date1 <- as.Date('2012-06-28')
   as.numeric(date1)
-  #• POSIXct: stores a date and time. In numeric form, number of seconds since 1/1/1970.
+  #�? POSIXct: stores a date and time. In numeric form, number of seconds since 1/1/1970.
   date2 <- as.POSIXct('2012-06-28 18:00')
   
   #4. Logical
-  #• (TRUE = 1, FALSE = 0)
-  #• Use ==/!= to test equality and inequality
+  #�? (TRUE = 1, FALSE = 0)
+  #�? Use ==/!= to test equality and inequality
   #Note: Use 'lubridate' and 'chron' packages to work with Dates
   as.numeric(TRUE)>=1
   
@@ -243,7 +243,7 @@ if(MODEL==10){
 # Apply
 if(MODEL==11){
   #Retruns a vector or array or list of values obtained by applying a function to margins of an array or matrix.
-  #就是说apply把一个function作用到array或者matrix的margins（可以理解为数组的每一行或者每一列）中，返回值时vector、array、list。
+  #就是说apply把一个function作用到array或者matrix的margins（可以理解为数组的每一行或者每一列）中，返回值时vector、array、list�?
   #简单的说，apply函数经常用来计算矩阵中行或列的均值、和值的函数，具体方法如下：
   
   rname = c("one","two","three")
@@ -251,7 +251,7 @@ if(MODEL==11){
   b <- matrix(1:6,nrow=3, dimnames = list(rname, cname))
   apply(b,1,sum)
   
-  #定义了个求平方和的函数,调用自定义函数
+  #定义了个求平方和的函�?,调用自定义函�?
   myfun <- function(x){
     sum(x^2)
   }
@@ -274,7 +274,7 @@ if(MODEL==12){
   
 }
 
-# 
+# How to use aggregate
 if(MODEL==13){
   
   # aggregate(formulas, data, function)
