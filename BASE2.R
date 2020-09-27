@@ -286,10 +286,3 @@ if(MODEL==13){
   # get the average price and average carat of different cut
   
 }
-
-# 
-if(MODEL==1){
-  
-  
-  
-}
